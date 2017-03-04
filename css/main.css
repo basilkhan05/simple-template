@@ -1,18 +1,18 @@
 /*
 
-Panier Labs CSS
+===================================================
 
+----------------  Setup ---------------------------
 
-
-Table of Contents:
-
-1. Header
-2. Banner
-3. Footer
+===================================================
 
 */
 
+html, body{
 
+	font-family: 'Merriweather', serif;
+
+}
 
 
 
@@ -27,17 +27,20 @@ Table of Contents:
 */
 
 .banner{
-	background-color: #3498db;
 	height: 100%;
 }
-
+.red{
+	background: #e74c3c;
+}
+.orange{
+	background: #d35400;
+}
 .banner-text{
 	position: absolute;
 	text-align: center;
 	color: #f39c12;
 	width: 100%;
 	top: 50%;
-
 }
 
 
