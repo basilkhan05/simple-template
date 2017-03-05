@@ -40,9 +40,23 @@ html, body{
 	text-align: center;
 	color: #f39c12;
 	width: 100%;
-	top: 50%;
+	top: 35%;
+	font-size: 2em;
 }
 
+.banner-half{
+	height: 75%;
+}
+
+.section-text{
+	position: relative;
+	text-align: center;
+	top: 50%;
+	color: #bdc3c7;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	
+}
 
 /*
 
@@ -59,4 +73,97 @@ body, h1, h2, h3, h4, h5, h6, p{
 }
 html, body{
 	height: 100%;
+}
+
+/*
+
+===================================================
+
+----------------  Navigation Bar ------------------
+
+===================================================
+
+*/
+.nav-bar{
+	height: 50px;
+	position: absolute;
+	z-index: 10;
+}
+.menu{
+	display: none;
+	transition: 1s all;
+	transition-timing-function: ease-in-out;
+}
+.nav-bar:hover .menu{
+	display: block;
+	transition: 1s all;
+	-webkit-transition: all 1s;
+	transition-timing-function: ease-in-out;
+}
+.menu > ul > li{
+	background-color: red;
+	list-style-type: none;
+	text-align: right;
+	font-size: 2em;
+}
+
+/*
+
+===================================================
+
+----------------  Footer ---------------------------
+
+===================================================
+
+*/
+
+footer{
+	background-color: grey;
+	height: 45%; 
+}
+
+
+/*
+
+===================================================
+
+----------------  Properties ----------------------
+
+===================================================
+
+*/
+
+.sticky{
+	position: fixed;
+}
+
+
+
+
+/*
+
+===================================================
+
+----------------  Contact Us ----------------------
+
+===================================================
+
+*/
+
+.contact-us-button{
+	bottom: 0;
+	left: 25px;
+	padding: 10px 10px 0 10px;
+	background-color: white;
+	border: 1px black solid;
+}
+
+
+.popup{
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
