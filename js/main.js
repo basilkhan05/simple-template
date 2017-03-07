@@ -1,18 +1,36 @@
 (function(window, $) {
     'use strict';
+    // initialize site on load
+    $(function(){
+        initSimple();
+    });
+
+    $('.popup')[0].style.display = 'block';
 
     //Contact Form Popup
     $('.contact-us-button').on('click', function(event) {
         event.preventDefault();
-        location.reload();
+        $('.popup').fadeIn() ;
+    });
+
+    //Contact Form Close
+    $('.close').on('click', function(event) {
+        console.log(this);
+        event.preventDefault();
+        $('.popup').fadeOut() ;
     });
 
     // Scroll menu 
     $('.scroll-spy').on('click', function(event) {
+        console.log(this.getAttribute("href"));
         event.preventDefault();
-       $(event.originalEvent.path[1].hash).animatescroll({scrollSpeed:1000});
+       $(this.getAttribute("href")).animatescroll({scrollSpeed:1000});
     });
 
+
+    function initSimple(){
+        $('.popup')[0].style.display = 'none';
+    }
 
 
 })(window, jQuery);
