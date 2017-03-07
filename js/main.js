@@ -5,6 +5,8 @@
         initSimple();
     });
 
+    
+
     //Contact Form Popup
     $('.contact-us-button').on('click', function(event) {
         event.preventDefault();
@@ -21,6 +23,8 @@
         event.preventDefault();
         $('.popup').fadeOut() ;
     });
+
+
 
     // Scroll menu 
     $('.scroll-spy').on('click', function(event) {
