@@ -1,27 +1,27 @@
 (function(window, $) {
     'use strict';
     // initialize site on load
-    $(function(){
+    $(function() {
         initSimple();
     });
 
-    
+
 
     //Contact Form Popup
     $('.contact-us-button').on('click', function(event) {
         event.preventDefault();
-        $('.popup').fadeIn() ;
+        $('.popup').fadeIn();
     });
     $('.contact-us-button-mobile').on('click', function(event) {
         event.preventDefault();
-        $('.popup').fadeIn() ;
+        $('.popup').fadeIn();
     });
 
     //Contact Form Close
     $('.close').on('click', function(event) {
         console.log(this);
         event.preventDefault();
-        $('.popup').fadeOut() ;
+        $('.popup').fadeOut();
     });
 
 
@@ -30,11 +30,11 @@
     $('.scroll-spy').on('click', function(event) {
         console.log(this.getAttribute("href"));
         event.preventDefault();
-       $(this.getAttribute("href")).animatescroll({scrollSpeed:1000});
+        $(this.getAttribute("href")).animatescroll({ scrollSpeed: 1000 });
     });
 
 
-    function initSimple(){
+    function initSimple() {
         $('.popup')[0].style.display = 'none';
     }
 
