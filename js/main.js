@@ -5,10 +5,12 @@
         initSimple();
     });
 
-    $('.popup')[0].style.display = 'block';
-
     //Contact Form Popup
     $('.contact-us-button').on('click', function(event) {
+        event.preventDefault();
+        $('.popup').fadeIn() ;
+    });
+    $('.contact-us-button-mobile').on('click', function(event) {
         event.preventDefault();
         $('.popup').fadeIn() ;
     });

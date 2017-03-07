@@ -325,6 +325,18 @@ hr.divider{
     color: white;
     border-bottom: none;
 }
+.contact-us-button-mobile {
+    bottom: 40px;
+    left: 45px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 60px 60px 60px 60px ;
+    border: 5px solid #FFFFFF;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 5em;
+    display: none;
+}
 
 .popup {
     z-index: 100;
@@ -346,7 +358,8 @@ hr.divider{
 	width: 50%;
 	height: 70px;
 	font-size: 36pt;
-	border: 1px solid black;
+	border: 3px solid #2c3e50;
+	border-radius: 10px;
 	color: #e74c3c;
 }
 .form-group > textarea{
@@ -359,6 +372,7 @@ hr.divider{
 	width: 50%;
 	margin: 0 auto;
 	font-family: 'Merriweather', serif;
+	border-radius: 10px;
 }
 
 .x2{
@@ -405,6 +419,13 @@ hr.divider{
   .responsive-font{
   	font-size: 4em;
   	height: auto;
+  }
+
+  .contact-us-button-mobile{
+  	display: block;
+  }
+  .contact-us-button {
+  	display: none;
   }
 
 }
