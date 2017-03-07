@@ -32,8 +32,9 @@ body {
 }
 
 .menu {
-    display: none;
-    transition: all 1s;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
     transition-timing-function: ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -42,10 +43,10 @@ body {
     margin-top: 0px;
 }
 
-.nav-bar:hover .menu {
-    display: block;
-    transition: 1s all;
-    -webkit-transition: all 1s;
+.nav-bar:hover > .menu {
+    opacity: 1;
+    transition: 0.5s all;
+    -webkit-transition: all 0.5s;
     transition-timing-function: ease-in-out;
 }
 
@@ -98,11 +99,13 @@ footer > div {
     padding: 10px;
     color: #FFFFFF;
     transition: 1s all;
+    -webkit-transition: all 1s;
 }
 
 .social-icons > a:hover {
     color: #e74c3c;
     transition: 1s all;
+    -webkit-transition: all 1s;
 }
 
 .content-blurb {
@@ -235,6 +238,7 @@ footer > div {
 
 .team-overlay {
     transition: all 1s;
+    -webkit-transition: all 1s;
     opacity: 0;
     position: absolute;
     top: 150px;
@@ -251,6 +255,7 @@ footer > div {
     height: 100%;
     z-index: 10;
     transition: all 1s;
+    -webkit-transition: all 1s;
     opacity: 1;
 }
 
@@ -270,11 +275,13 @@ footer > div {
     bottom: 50px;
     position: absolute;
     transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
 }
 
 .portfolio:hover > .portfolio-overlay {
     opacity: 1;
     transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
     bottom: 50px;
     position: absolute;
     color: #e74c3c;
@@ -283,6 +290,7 @@ footer > div {
 .portfolio > .portfolio-overlay > i:hover {
     color: #2c3e50;
     transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
 }
 
 .scroll-down > i {
@@ -293,10 +301,12 @@ footer > div {
 .zoom-image:hover img {
     transform: scale(1.1);
     transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
 }
 
 .zoom-image img {
     transition: all .3s ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
 }
 
 
@@ -438,11 +448,14 @@ body {
 .grayscale {
     filter: grayscale(100%);
     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+
 }
 
 .grayscale:hover {
     filter: grayscale(0%);
     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 
 .sticky {
