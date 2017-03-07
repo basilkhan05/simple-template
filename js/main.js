@@ -19,7 +19,6 @@
 
     //Contact Form Close
     $('.close').on('click', function(event) {
-        console.log(this);
         event.preventDefault();
         $('.popup').fadeOut();
     });
@@ -28,7 +27,6 @@
 
     // Scroll menu 
     $('.scroll-spy').on('click', function(event) {
-        console.log(this.getAttribute("href"));
         event.preventDefault();
         $(this.getAttribute("href")).animatescroll({ scrollSpeed: 1000 });
     });
